@@ -36,7 +36,7 @@ Thumbs.db
 # Tooling / local automation
 # ======================================
 .qodo/
-roo/
+.roo/
 
 # Logs / temp files
 *.log
