@@ -1,16 +1,9 @@
-variable "ami_id" {
-  type        = string
-  description = "AMI ID for the EC2 instance"
-}
+variable "project_id" { type = string }
+variable "region"     { type = string }
+variable "zone"       { type = string }
 
-variable "instance_type" {
-  type        = string
-}
+variable "name"         { type = string }
+variable "machine_type" { type = string }
+variable "image"        { type = string }
 
-variable "name" {
-  type        = string
-}
-
-variable "environment" {
-  type        = string
-}
+variable "environment" { type = string }
