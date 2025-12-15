@@ -1,0 +1,52 @@
+# ======================================
+# Terraform local artifacts
+# ======================================
+.terraform/
+.terraform.lock.hcl
+
+# Local state (Stacks run remotely in HCP)
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+
+# CLI overrides (never commit)
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Variable files (may contain secrets)
+*.tfvars
+*.tfvars.json
+
+# Terraform CLI config
+.terraformrc
+terraform.rc
+
+# ======================================
+# IDE / Editor / OS files
+# ======================================
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# ======================================
+# Tooling / local automation
+# ======================================
+.qodo/
+roo/
+
+# Logs / temp files
+*.log
+*.tmp
+
+# ======================================
+# Explicitly keep Terraform Stacks files
+# ======================================
+!components.tfcomponent.hcl
+!deployments.tfdeploy.hcl
+!provider.tfcomponent.hcl
+!*.tfcomponent.hcl
+!*.tfdeploy.hcl
